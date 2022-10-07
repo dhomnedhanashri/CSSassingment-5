@@ -1,0 +1,219 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.main{
+    position: absolute;
+    left: 380px;
+    margin-left:38vw ;
+}
+
+.ones {
+    background-color: green;
+    animation-name: one;
+
+}
+
+.ones,
+.twoo,
+.threes,
+.first,
+.second,
+.third {
+    height: 120px;
+    width: 120px;
+    margin: 25px;
+    border: 2px solid black;
+    margin: 25px;
+    display: inline-block;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes one {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    25% {
+        transform: skewX(25deg);
+    }
+
+    75% {
+        transform: skewX(-25deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+.twoo {
+    background-color: grey;
+    animation-name: twoo;
+}
+
+@keyframes twoo {
+    0% {
+        transform: skewy(0deg);
+    }
+
+    25% {
+        transform: skewy(25deg);
+    }
+
+    75% {
+        transform: skewy(-25deg);
+    }
+
+    100% {
+        transform: skewy(0deg);
+    }
+}
+
+.threes {
+    background-color: green;
+    animation-name: threes;
+}
+
+@keyframes threes {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.first{
+    background-color: green;
+    animation-name: first;
+}
+@keyframes first{
+    0% {
+        transform: scaley(0.5);
+    }
+
+    25% {
+        transform: scaley(0.7);
+    }
+
+    75% {
+        transform: scaley(1);
+    }
+
+    100% {
+        transform: scaley(0.5);
+    }
+}
+.second{
+    background-color:rgb(70, 18, 18);
+    animation-name: second;
+}
+@keyframes second{
+    0% {
+        transform: scalex(0.5);
+    }
+
+    25% {
+        transform: scalex(0.75);
+    }
+
+    75% {
+        transform: scalex(1);
+    }
+
+    100% {
+        transform: scalex(0.5);
+    }
+}
+.third{
+    background-color:aqua;
+    animation-name: third;
+}
+@keyframes third{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+}
+a{
+    color: brown;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    left: 6vw;
+}
+.fone,.ftwo,.fthree,.ffour,.ffive,.fsix,.fsev{
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    border: 2px solid black;
+    margin: 25px;
+}
+.fone{
+    transition-property: all;
+    transition-duration: 4s;
+}
+.fone:hover{
+width: 300px;
+}
+.ftwo{
+    transition-property: all;
+    transition-duration: 4s;
+}
+.ftwo:hover{
+    height: 300px;
+    width: 300px;
+}
+.fthree{
+    transition: linear 4s  ;
+    }
+    .fthree:hover{
+        width: 300px;
+    }
+    .ffour{
+        transition: all 4s ease;
+    }
+    .ffour:hover{
+        width: 300px;
+    }
+    .ffive{
+        transition: all 4s ease-in;
+    }
+    .ffive:hover{
+        width: 300px;
+    }
+    .fsix{
+        transition: all 4s ease-out;
+    }
+    .fsix:hover{
+        width: 300px;
+    }  
+    .fsev{
+transition: all 4s ease-in-out;
+    }
+    .fsev:hover{
+        width: 300px;
+    }  
+.fives{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 38vw;
+    transition: all;
+    transition-delay: 0.4s;
+    transition-duration: 3s;
+}
+.ancor{
+    position: relative;
+    left: 44vw;
+}

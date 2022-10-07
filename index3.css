@@ -1,0 +1,167 @@
+.container {
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.road {
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    height: 200px;
+    width: 300%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: road 3s linear infinite;
+}
+
+@keyframes road {
+    100% {
+        transform: translate(-200px);
+    }
+}
+
+.city {
+    background-image: url(./city.png);
+    height: 290px;
+    width: 250%;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes city {
+    100% {
+        transform: translate(-1400px);
+    }
+}
+
+.car {
+    animation: car 2s linear infinite;
+    width: 100px;
+    left: 40%;
+    bottom: 50px;
+    position: absolute;
+    z-index: 2;
+}
+
+.car img {
+    width: 400%;
+}
+
+@keyframes car {
+    100% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    0% {
+        transform: translateY(-2px);
+    }
+}
+
+.frontwheel {
+    z-index: 2;
+    position: absolute;
+    bottom: 60px;
+    left: 42vw;
+    animation: wheel 1s linear infinite;
+}
+
+.frontwheel img {
+    width: 79px;
+    height: 79px;
+}
+
+
+
+.backwheel {
+    z-index: 2;
+    position: absolute;
+    bottom: 60px;
+    left: 59vw;
+    animation: wheel 1s linear infinite;
+}
+
+.backwheel img {
+    width: 79px;
+    height: 79px;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sun {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    animation: sun 300s linear infinite;
+}
+
+@keyframes sun {
+    100% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(-1500px);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: translate(-1500px);
+    }
+}
+
+.sun img {
+    width: 150px;
+    height: 150px;
+}
+
+.hed1,
+.hed2,
+.hed3 {
+
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    left: 400px;
+
+}
+.hed1{
+    background-color: orange;
+}
+.hed2{
+    background-color: white;
+    margin-left: 7px;
+}
+.hed3{
+    background-color: green;
+    margin-left: 7px;
+}
+.flag{
+    position: absolute;
+    top:440px;
+    right: 490px;
+}
+.flag img{
+    width:100px;
+    height: 80px;
+    
+}
