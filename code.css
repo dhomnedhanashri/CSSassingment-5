@@ -6,10 +6,11 @@ h1 {
     display: flex;
     justify-content: center;
 }
-.main{
-    position: absolute;
+
+.main {
+    position: relative;
     left: 380px;
-    margin-left:38vw ;
+
 }
 
 .ones {
@@ -89,11 +90,13 @@ h1 {
         transform: rotate(360deg);
     }
 }
-.first{
+
+.first {
     background-color: green;
     animation-name: first;
 }
-@keyframes first{
+
+@keyframes first {
     0% {
         transform: scaley(0.5);
     }
@@ -110,11 +113,13 @@ h1 {
         transform: scaley(0.5);
     }
 }
-.second{
-    background-color:rgb(70, 18, 18);
+
+.second {
+    background-color: rgb(70, 18, 18);
     animation-name: second;
 }
-@keyframes second{
+
+@keyframes second {
     0% {
         transform: scalex(0.5);
     }
@@ -131,11 +136,13 @@ h1 {
         transform: scalex(0.5);
     }
 }
-.third{
-    background-color:aqua;
+
+.third {
+    background-color: aqua;
     animation-name: third;
 }
-@keyframes third{
+
+@keyframes third {
     0% {
         transform: rotate(0deg);
     }
@@ -145,7 +152,8 @@ h1 {
     }
 
 }
-a{
+
+a {
     color: brown;
     font-size: 35px;
     font-weight: bold;
@@ -153,67 +161,97 @@ a{
     position: relative;
     left: 6vw;
 }
-.fone,.ftwo,.fthree,.ffour,.ffive,.fsix,.fsev{
+
+.fone,
+.ftwo,
+.fthree,
+.ffour,
+.ffive,
+.fsix,
+.fsev {
     height: 120px;
     width: 120px;
     background-color: green;
     border: 2px solid black;
     margin: 25px;
 }
-.fone{
+
+.fone {
     transition-property: all;
     transition-duration: 4s;
 }
-.fone:hover{
-width: 300px;
+
+.fone:hover {
+    width: 300px;
 }
-.ftwo{
+
+.ftwo {
     transition-property: all;
     transition-duration: 4s;
 }
-.ftwo:hover{
+
+.ftwo:hover {
     height: 300px;
     width: 300px;
 }
-.fthree{
-    transition: linear 4s  ;
-    }
-    .fthree:hover{
-        width: 300px;
-    }
-    .ffour{
-        transition: all 4s ease;
-    }
-    .ffour:hover{
-        width: 300px;
-    }
-    .ffive{
-        transition: all 4s ease-in;
-    }
-    .ffive:hover{
-        width: 300px;
-    }
-    .fsix{
-        transition: all 4s ease-out;
-    }
-    .fsix:hover{
-        width: 300px;
-    }  
-    .fsev{
-transition: all 4s ease-in-out;
-    }
-    .fsev:hover{
-        width: 300px;
-    }  
-.fives{
-    position: relative;
+
+.fthree {
+    transition: linear 4s;
+}
+
+.fthree:hover {
+    width: 300px;
+}
+
+.ffour {
+    transition: all 4s ease;
+}
+
+.ffour:hover {
+    width: 300px;
+}
+
+.ffive {
+    transition: all 4s ease-in;
+}
+
+.ffive:hover {
+    width: 300px;
+}
+
+.fsix {
+    transition: all 4s ease-out;
+}
+
+.fsix:hover {
+    width: 300px;
+}
+
+.fsev {
+    transition: all 4s ease-in-out;
+}
+
+.fsev:hover {
+    width: 300px;
+}
+
+.fives {
+  
     margin-top: 40px;
     margin-left: 38vw;
+    position: absolute;
     transition: all;
     transition-delay: 0.4s;
     transition-duration: 3s;
 }
-.ancor{
+
+.ancor {
+    top:1080px ;
     position: relative;
     left: 44vw;
 }
+
+.fives:hover {
+    margin-left: 25vw;
+}
+
