@@ -157,7 +157,7 @@
 }
 .flag{
     position: absolute;
-    top:300px;
+    top:200px;
     right: 450px;
     z-index: 100;
 }
